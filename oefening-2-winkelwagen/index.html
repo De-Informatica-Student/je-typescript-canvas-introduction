@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/styling.css">
+
+        <title>Exercise 2 - Shopping Cart</title>
+    </head>
+
+    <body>
+        <div id="product-list">
+            <div class="product">
+                <img src="https://image.coolblue.nl/max/500x500/products/1765990" alt="Pokémon Violet">
+
+                <div class="product-controls">
+                    <button id="increase-pokemon">+</button>
+                    <button id="decrease-pokemon">-</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://image.coolblue.nl/max/500x500/products/1940253" alt="Super Mario Bros Wonder">
+
+                <div class="product-controls">
+                    <button id="increase-mario">+</button>
+                    <button id="decrease-mario">-</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://image.coolblue.nl/max/500x500/products/1527735" alt="Monster Hunter Rise">
+
+                <div class="product-controls">
+                    <button id="increase-monster">+</button>
+                    <button id="decrease-monster">-</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="shopping-cart">
+            <h1>Shopping Cart</h1>
+
+            <table id="receipt">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Pokémon Violet</td>
+                        <td id="pokemon-count">0</td>
+                    </tr>
+
+                    <tr>
+                        <td>Super Mario Bros Wonder</td>
+                        <td id="mario-count">0</td>
+                    </tr>
+
+                    <tr>
+                        <td>Monster Hunter Rise</td>
+                        <td id="monster-count">0</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <td id="total-price">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <script src="./build/app.js"></script>
+    </body>
+</html>

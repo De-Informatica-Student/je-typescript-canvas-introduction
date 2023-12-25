@@ -1,0 +1,46 @@
+:root {
+    --common-spacing: 2rem;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#product-list img {
+    height: 200px;
+    margin: 1rem var(--common-spacing);
+}
+
+.product {
+    display: inline-block;
+}
+
+.product-controls,
+#shopping-cart {
+    text-align: center;
+}
+
+.product-controls button {
+    width: var(--common-spacing);
+    height: var(--common-spacing);
+    margin-bottom: var(--common-spacing);
+}
+
+#shopping-cart {
+    width: 100%;
+}
+
+#receipt {
+    text-align: left;
+    margin: 0 auto;
+}
+
+#receipt td:first-child {
+    padding-right: var(--common-spacing);
+}
+
+#receipt td:last-child {
+    text-align: right;
+}
