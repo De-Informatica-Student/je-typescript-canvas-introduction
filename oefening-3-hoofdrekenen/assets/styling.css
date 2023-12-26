@@ -1,0 +1,39 @@
+:root {
+    --default-spacing: 3rem;
+}
+
+html {
+    text-align: center;
+}
+
+div {
+    margin-bottom: var(--default-spacing);
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    text-align: left;
+}
+
+tr td:not(:last-child) {
+    padding-right: var(--default-spacing);
+}
+
+input {
+    width: var(--default-spacing);
+}
+
+.correct {
+    background-color: greenyellow;
+}
+
+.incorrect {
+    background-color: indianred;
+}

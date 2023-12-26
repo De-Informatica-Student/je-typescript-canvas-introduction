@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/styling.css">
+
+        <title>Exercise 3 - Calculations</title>
+    </head>
+
+    <body>
+        <h1>Calculation Practice</h1>
+
+        <div id="practice-control">
+            <label for="calculation-type">Practice with:</label>
+            <select id="calculation-type">
+                <option value="+">Addition</option>
+                <option value="-">Subtraction</option>
+                <option value="*">Multiplication</option>
+                <option value="/">Division without Remainder</option>
+                <option value="mix">Mixed</option>
+            </select>
+            <button id="start-practice">Practice Now!</button>
+        </div>
+
+        <div id="practice-area" class="hidden">
+            <div id="calculations"></div>
+            <button id="check-calculations">Check!</button>
+        </div>
+
+        <script src="./build/app.js" type="module"></script>
+    </body>
+</html>
